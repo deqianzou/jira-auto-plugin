@@ -16,7 +16,7 @@ PASSWD = "password"
 JIRA_URL = "jira.url"
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-config_file', required=False, nargs=1, dest='config_file')
+parser.add_argument('-config_file', required=True, nargs=1, dest='config_file')
 parser.add_argument('--conf', required=False, nargs=1, type=str, action='append', dest='kv_collection')
 
 if __name__ == '__main__':
